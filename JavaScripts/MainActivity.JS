@@ -74,12 +74,13 @@ class Ca {
     Seconds = Math ['abs'] (Time ['getSeconds'] () - 59),
     Milliseconds = Math ['abs'] (Time ['getMilliseconds'] () - 1000);
 
-    if (Time['getFullYear'] () - 18 - Year > 0 || Year === 0 && Month === 0 && Dates === 0 && Hours === 0 && Minutes === 0 && Seconds === 0 && Milliseconds === 0)
+    if (Time['getFullYear'] () - 18 - Year > 0 || Time ['getDate'] () + 1 - Dateo > 0 || Year === 0 && Month === 0 && Dates === 0 && Hours === 0 && Minutes === 0 && Seconds === 0 && Milliseconds === 0)
     return new Object ({
       "Code": 201,
       "Message": "Взрослый",
       "Data": null
     });
+    else
     return new Object ({
       "Code": 200,
       "Message": "Расчет успешен",
