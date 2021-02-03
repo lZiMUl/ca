@@ -77,7 +77,7 @@ class Ca {
     if (Time['getFullYear'] () - 18 - Year > 0 || Time ['getDate'] () + 1 - Dateo > 0 || Year === 0 && Month === 0 && Dates === 0 && Hours === 0 && Minutes === 0 && Seconds === 0 && Milliseconds === 0)
     return new Object ({
       "Code": 201,
-      "Message": "Взрослый",
+      "Message": "Adult",
       "Data": null
     });
     else
@@ -120,8 +120,12 @@ window ['addEventListener'] ('load', Window => {
       if (Year === null || Month === null || Dates === null)
       alert (Language ['Options'] ['Error']);
       else
-      setInterval(Window => {
-        const Cfa = new Ca(Year, Month, Dates);
+      const Update = setInterval(Window => {
+        const Cfa = new Ca (Year, Month, Dates);
+        if (Cfa ['Code'] === 201) {
+          alert (Cfa ['Message'])
+          clearInterval (Update);
+        } else
         document['getElementById']('Time')['innerHTML'] = new String(`${Language ['Options'] ['Year']}:  ${
             Cfa ['Data'] ['Year']
           } | ${Language ['Options'] ['Month']}:  ${
