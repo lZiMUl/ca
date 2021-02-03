@@ -1,0 +1,25 @@
+Body {
+    font-size: 15Pt;
+}
+
+.Box {
+  Width: 100%;
+  Height: 100%;
+  Text-Align: Center;
+}
+
+.Tips, .Time {
+  Width: 9%;
+  Height: 100%;
+  Font-Weight: Bold;
+  Outline: None;
+  Border-Radius: 8PX;
+}
+
+.Tips {
+  Font-Size: 25Pt;
+}
+
+.Time {
+  Font-Size: 15Pt;
+}
