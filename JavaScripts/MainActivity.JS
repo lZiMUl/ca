@@ -59,9 +59,9 @@ class Languages {
           "Second": null,
           "Millisecond": null
         });
-    }
-  }
-}
+    };
+  };
+};
 
 class Ca {
   constructor (Year, Month, Dateo) {
